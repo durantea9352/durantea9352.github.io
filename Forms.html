@@ -47,7 +47,7 @@
 <body style="background-image: url(DJ_Ace_D..jpeg); background-repeat: no-repeat; 
 background-size: 100% 150%; color: rgb(177, 178, 180);">
 
-    <a target="_blank" href="file:///C:/Users/FTCC/Documents/Shuffle%20Alliance/index.html"></a>
+    <a target="_blank" href="index.html"></a>
 
 
  <h3 style="color:  rgb(0, 238, 255); font-size: 50px;">Forms</h3>
@@ -63,11 +63,9 @@ background-size: 100% 150%; color: rgb(177, 178, 180);">
         
     </p>
 
-<form>
+<form action="mailto:djace_d.sa@outlook.com" method="post">
 
 
-
-<form>
   <p style="color:  rgb(0, 238, 255); font-size: 18px;">
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
   <label for="vehicle1"> I am an Artist</label><br>
@@ -75,13 +73,13 @@ background-size: 100% 150%; color: rgb(177, 178, 180);">
   <label for="vehicle2"> I am a Producer</label><br>
   
 </p>
-</form>
+
 
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="file:///C:/Users/FTCC/Documents/Shuffle%20Alliance/index.html">Home</a>
-    <a href="file:///C:/Users/FTCC/Documents/Shuffle%20Alliance/S.A.%20Table.html">Table</a>
+    <a href="index.html">Home</a>
+    <a href="S.A. Table.html">Table</a>
     <a href="mailto:djace_d.sa@outlook.com">Contact</a>
   </div>
 </div>
@@ -108,27 +106,29 @@ window.onclick = function(event) {
 }
 </script>
 
-<form action="mailto:djace_d.sa@outlook.com">
+<fieldset>
+
+<legend style="color:rgb(0, 238, 255); font-size:xx-large;"><b>Reach out!</b></legend>
   <p style="color: rgb(0, 238, 255); font-size: 18px;">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="fname" require>First name:</label><br>
+  <input type="text" id="fname" name="fname" value="" required><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="submit">
+  
   
 
   
-</form>
 
 
 <h2 style="color: rgb(0, 238, 255);">Leave a Comment</h2>
 
-<form action="mailto:djace_d.sa@outlook.com" method="post">
+
   <label for="comment">Your Comment:</label><br>
   <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
   <input type="submit" value="submit">
-  <input action="file:///C:/Users/FTCC/Documents/Shuffle%20Alliance/Forms.html" method="post" type="reset" value="reset">
+  <input action="Forms.html" method="post" type="reset" value="reset">
 </form>
+</fieldset>
 
 <p>The form data will be sent to the owners email.</p>
 
